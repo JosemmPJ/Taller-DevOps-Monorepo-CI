@@ -15,8 +15,73 @@ Taller-DevOps-Monorepo-CI/
 ├── README.md
 ├── docker-compose.yaml
 ├── backend/
-|
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── main.py
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── config.py
+│   │   │   ├── logger.py
+│   │   │   ├── middleware.py
+│   │   │   └── security.py
+│   │   ├── routers/
+│   │   │   ├── __init__.py
+│   │   │   ├── auth_router.py
+│   │   │   ├── calculadora_router.py
+│   │   │   └── health_router.py
+│   │   ├── schemas/
+│   │   │   ├── __init__.py
+│   │   │   ├── auth.py
+│   │   │   └── calculadora.py
+│   │   └── services/
+│   │       ├── __init__.py
+│   │       └── calculadora_service.py
+│   └── tests/
+│       ├── __init__.py
+│       ├── conftest.py
+│       ├── test_auth.py
+│       ├── test_calculadora.py
+│       ├── test_cors.py
+│       └── test_health.py
 └── frontend/
+    ├── Dockerfile
+    ├── README.md
+    ├── nginx.conf.template
+    ├── package.json
+    ├── tsconfig.json
+    ├── public/
+    │   └── index.html
+    └── src/
+        ├── App.tsx
+        ├── App.css
+        ├── Calculador.tsx
+        ├── Calculadora.css
+        ├── index.tsx
+        ├── index.css
+        ├── react-app-env.d.ts
+        ├── reportWebVitals.ts
+        ├── setupTests.ts
+        ├── global.d.ts
+        ├── services/
+        │   └── api.ts
+        ├── components/
+        │   ├── Display.tsx
+        │   ├── Historial.tsx
+        │   ├── NumberPad.tsx
+        │   ├── OperationPad.tsx
+        │   └── StatusBar.tsx
+        ├── hooks/
+        │   ├── index.ts
+        │   ├── useAuth.ts
+        │   └── useCalculadora.ts
+        ├── types/
+        │   └── index.ts
+        └── assets/
+            └── image/
+                └── mate.png
 ```
 
 ---
